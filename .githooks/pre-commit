@@ -1,4 +1,7 @@
 #!/bin/sh
 
 gofmt -l -s -w .
+echo "\e[32mgofmt\e[0m run \e[32msuccessfully\e[0m"
+
 golangci-lint run --tests=0 ./...
+echo "\e[32mgolangci\e[0m run \e[32msuccessfully\e[0m"
