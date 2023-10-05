@@ -1,3 +1,4 @@
 #!/bin/sh
-go fmt .
+
+gofmt -l -s -w .
 golangci-lint run --tests=0 ./...
