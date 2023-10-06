@@ -1,6 +1,10 @@
 package backend
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"log"
+
+	"github.com/gofiber/fiber/v2"
+)
 
 func StartBackend() {
 	app := fiber.New()
@@ -9,5 +13,5 @@ func StartBackend() {
 		return c.SendString("Hello, World!")
 	})
 
-	app.Listen(":3000")
+	log.Fatal(app.Listen(":3000"))
 }
