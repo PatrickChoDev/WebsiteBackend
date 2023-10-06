@@ -10,7 +10,10 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["golang.go"]
+      "extensions": [
+		"golang.go",
+		"ms-vscode.makefile-tools"
+	]
     }
   }
 
